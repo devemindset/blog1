@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import Details from "./components/Details";
-import Footer from "../../components/template_1/Footer";
-import Contact from "../../components/template_1/Contact";
-import ContactForm from "../../components/template_1/ContactForm";
-import ServiceList from "../../components/template_1/ServiceList";
+
 import Header from "./components/Header";
+import RecentPost from "../../../components/RecentPost";
+import Footer from "../../../components/Footer";
 
 const detail = {
     imageSrc : "/product1.jpg",
@@ -37,9 +36,8 @@ const Page: NextPage = () => {
                             <Details  detail={detail.detail} title={detail.title} imageSrc={detail.imageSrc}  />
               
                 </div>
-    <ServiceList />
-    <Contact />
-    <ContactForm />            
+    <RecentPost />
+            
     </main>
     
     <Footer />
