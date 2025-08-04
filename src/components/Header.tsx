@@ -2,8 +2,8 @@
 
 import { Menu, X } from 'lucide-react';
 import { useState, type FC } from 'react';
-import SmartLink from '../ui/SmartLink';
 import { usePathname } from 'next/navigation';
+import SmartLink from './ui/SmartLink';
 
 const Header: FC = () => {
   const [open, setOpen] = useState(false);
@@ -11,11 +11,11 @@ const Header: FC = () => {
 
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/resume', label: 'Resume' },
-    { href: '/projects', label: 'Portfolio' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/categories/blog_detail', label: 'Detail' },
+    // { href: '/services', label: 'Services' },
+    // { href: '/resume', label: 'Resume' },
+    // { href: '/projects', label: 'Portfolio' },
+    // { href: '/contact', label: 'Contact' },
   ];
 
   const isActive = (href: string) => pathname === href;

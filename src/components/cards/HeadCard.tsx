@@ -1,7 +1,7 @@
 import type { FC } from 'react';
-import { BlogCardInfo } from '../../../types';
 import {motion } from "framer-motion"
 import Image from 'next/image';
+import { BlogCardInfo } from '../../types';
 
 interface HeadCardProps {
    

@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import HeadCard from './cards/HeadCard';
-import { BlogCardInfo } from '../../types';
+import { BlogCardInfo } from '../types';
+
 
 const HeroCardInfo : BlogCardInfo = {
     date : "Apr. 14th,2025",
@@ -17,7 +18,7 @@ const HeroCardInfo : BlogCardInfo = {
 const Hero: FC = () => {
         return (
             <div className='w-full min-h-screen flex items-center flex-col bg-[var(--background)] pt-30'>
-                <h1 className='font-black text-6xl mb-10'>Gaming Blog</h1>
+                <h1 className='font-black text-6xl mb-10'>web development blog</h1>
                 <h2 className='mb-10'>Lorem ipsum d Ad debitis odio eveniet iusto saepe fugiat!</h2>
                 <div className='w-[600px] bg-[var(--background-element-3)] h-[350px] '>
                 <HeadCard blogCardInfo={HeroCardInfo} width='' height=''/>

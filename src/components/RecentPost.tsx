@@ -1,6 +1,7 @@
 import type { FC } from 'react';
-import { BlogCardInfo } from '../../types';
+
 import HeadCard from './cards/HeadCard';
+import { BlogCardInfo } from '../types';
 
 const recentPosts : BlogCardInfo[] = [
     {
